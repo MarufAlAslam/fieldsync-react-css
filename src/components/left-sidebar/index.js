@@ -15,7 +15,7 @@ import progress from "../../assets/images/progress.svg";
 // router
 import { NavLink } from "react-router-dom";
 
-const LeftSidebar = () => {
+const LeftSidebar = ({ menuOpen }) => {
   const menuData = [
     {
       id: 1,
