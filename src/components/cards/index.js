@@ -11,23 +11,23 @@ const Cards = () => {
     <div className="grid grid-cols-3 gap-25">
       <div className="col-span-2 card1 card-h">
         <p className="fs-24 text-white medium">New Work Order</p>
-        <p className="text-white fs-18">Create a new work order</p>
+        <p className="text-white">Create a new work order</p>
       </div>
       <div className="card2 card-h">
         <p className="fs-24 text-white medium">Overview</p>
-        <p className="text-white fs-18">Overview of all work orders</p>
+        <p className="text-white">Overview of all work orders</p>
       </div>
       <div className="card3 card-h">
         <p className="fs-24 text-white medium">Client list</p>
-        <p className="text-white fs-18">Client list with details</p>
+        <p className="text-white">Client list with details</p>
       </div>
       <div className="card4 card-h">
         <p className="fs-24 text-white medium">Calendar</p>
-        <p className="text-white fs-18">Calendar overview</p>
+        <p className="text-white">Calendar overview</p>
       </div>
       <div className="card5 card-h">
         <p className="fs-24 text-white medium">Billing</p>
-        <p className="text-white fs-18">Overview of invoices</p>
+        <p className="text-white">Overview of invoices</p>
       </div>
     </div>
   );
