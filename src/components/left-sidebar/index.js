@@ -9,6 +9,9 @@ import profileIcon from "../../assets/images/profile.svg";
 import commentIcon from "../../assets/images/comment.svg";
 import cogIcon from "../../assets/images/cog.svg";
 
+//images
+import progress from "../../assets/images/progress.svg";
+
 // router
 import { NavLink } from "react-router-dom";
 
@@ -63,6 +66,18 @@ const LeftSidebar = () => {
                 <span className="menu-text">{item.name}</span>
               </NavLink>
             ))}
+          </div>
+        </div>
+
+        <div className="w-full progress text-center">
+          <div className="progress-card">
+            <img src={progress} alt="progress" className="progress-img" />
+            <p className="progress-card-title">Today’s progress</p>
+            <div className="progress-bar">
+              <div className="inner"></div>
+            </div>
+            <p className="fs-13 percentage text-blue bold">56%</p>
+            <p className="text-blue fs-13 mediuum">Of today’s work is done!</p>
           </div>
         </div>
       </div>

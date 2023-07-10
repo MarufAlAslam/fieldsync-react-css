@@ -68,7 +68,7 @@ img {
   width: 100%;
 }
 .logo {
-  width: 90%;
+  width: 80%;
   display: block;
   margin: auto;
 }
@@ -76,7 +76,8 @@ img {
 .left-sidebar {
   min-width: 275px;
   background-color: white;
-  min-height: 100vh;
+  height: 100vh;
+  overflow-y: scroll;
 }
 .sidebar {
   width: 100%;
@@ -129,4 +130,75 @@ img {
   border-right: 3px solid transparent;
   transition: 0.5s;
   opacity: 0.5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.progress {
+  padding-bottom: 35px;
+  margin-top: 200px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.progress-img {
+  position: relative;
+  top: -100px;
+  margin-bottom: -100px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.progress-card {
+  background-color: #f5f5fb;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.progress-card-title {
+  color: #8da1b5;
+  margin-bottom: 20px;
+}
+.progress-bar {
+  background-color: #c7cadd;
+  height: 5px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.progress-bar .inner {
+  width: 56%;
+  height: 5px;
+  background-color: #0b4470;
+  border-radius: 10px;
+}
+
+.text-blue {
+  color: #0b4470;
+}
+.fs-13 {
+  font-size: 13px;
+}
+.bold {
+  font-family: "SF Pro Bold";
+}
+.percentage {
+  margin-bottom: 5px;
+}
+.medium {
+  font-family: "SF Pro Medium";
 }
