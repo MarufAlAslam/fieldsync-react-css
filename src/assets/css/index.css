@@ -202,3 +202,91 @@ img {
 .medium {
   font-family: "SF Pro Medium";
 }
+
+/* main panel */
+.main-panel {
+  padding: 35px;
+  padding-top: 55px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+.cards-holder {
+  padding: 35px;
+}
+
+.grid {
+  display: grid;
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.gap-25 {
+  gap: 25px;
+}
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.op-0 {
+  opacity: 0;
+}
+
+.card-h {
+  height: 200px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: right !important;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card-h:hover {
+  transform: scale(1.05);
+}
+
+.card1 {
+  background: url("../images/card1.svg");
+}
+
+.card2 {
+  background: url("../images/card2.svg");
+}
+
+.card3 {
+  background: url("../images/card3.svg");
+}
+
+.card4 {
+  background: url("../images/card4.svg");
+}
+
+.card5 {
+  background: url("../images/card5.svg");
+}
+
+.text-white {
+  color: white;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
