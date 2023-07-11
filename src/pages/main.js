@@ -4,8 +4,8 @@ import Main from "../components/main";
 import RightSidebar from "../components/right-sidebar";
 
 const Home = () => {
-  const [menuOpen, setMenuOpen] = useState(true);
-  const [toolBarOpen, setToolBarOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [toolBarOpen, setToolBarOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [overlayVisible, setOverlayVisible] = useState(false);
   const [toolLayVisible, setToolLayVisible] = useState(false);
@@ -20,7 +20,7 @@ const Home = () => {
   // if window size is less than 650px, set toolBarOpen to false
   useEffect(() => {
     setWindowWidth(window.innerWidth);
-    if (windowWidth < 650) {
+    if (windowWidth < 800) {
       setToolBarOpen(false);
     }
   }, [windowWidth]);

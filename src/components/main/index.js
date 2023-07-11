@@ -23,7 +23,9 @@ const Main = ({ menuToggler, toolbarToggler }) => {
         <p className="fs-24 medium text-blue mb-30">
           Monday - 3 July 2023 - 12:15:34
         </p>
-        <img src={bell} alt="bell" className="bell" />
+        <button className="bell-btn">
+          <img src={bell} alt="bell" className="bell" />
+        </button>
       </div>
       <h2 className="fs-28 text-blue medium">Dashboard</h2>
 

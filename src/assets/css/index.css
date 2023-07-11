@@ -250,7 +250,7 @@ img {
 }
 
 .card-h {
-  min-height: 200px;
+  min-height: 250px;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: right !important;
@@ -262,7 +262,7 @@ img {
 }
 
 .card-h:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .card1 {
@@ -329,13 +329,29 @@ img {
 .tech-card {
   background-color: rgba(199, 202, 221, 0.1);
   padding-top: 30px;
-  padding: 13px;
+  padding: 0 13px;
   border-radius: 10px;
+}
+
+.my-3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .tech-inner {
   height: 250px;
   overflow-y: scroll;
+}
+
+.job-inner {
+  height: 43vh;
+  overflow-y: scroll;
+}
+
+.down-btn {
+  border: unset;
+  background-color: transparent;
+  margin-top: 15px;
 }
 
 .cards-holder {
@@ -404,6 +420,30 @@ img {
 .toolBarbtn {
   display: none;
 }
+.bell-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+.bell-btn:hover {
+  outline: none;
+  background-color: white;
+}
+.main-panel {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+@media screen and (min-width: 1700px) {
+  .card-h {
+    min-height: 400px;
+  }
+}
+
 @media screen and (min-width: 1400px) {
   .cards-holder {
     padding: 35px;
@@ -416,10 +456,6 @@ img {
   }
   .col-span-2 {
     grid-column: span 1;
-  }
-  .main-panel {
-    overflow-y: scroll;
-    height: 100vh;
   }
 }
 
@@ -465,9 +501,6 @@ img {
     overflow-y: scroll;
     height: 100vh;
   }
-}
-
-@media screen and (max-width: 650px) {
   .right-sidebar {
     position: fixed;
     right: 0;
@@ -476,21 +509,26 @@ img {
     transition: 0.5s;
     transform: translateX(100%);
   }
-
-  .right-sidebar.active {
-    transform: translateX(0);
-  }
-  .logo-mobile {
-    width: 120px;
-    display: block;
-    position: relative;
-    top: -12px;
-  }
   .toolBarbtn {
     display: block;
     border: none;
     margin-bottom: 20px;
     background-color: transparent;
+  }
+  .right-sidebar.active {
+    transform: translateX(0);
+  }
+  .logo-mobile {
+    width: 200px;
+    display: block;
+    position: relative;
+    top: -12px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .logo-mobile {
+    width: 120px;
   }
 }
 

@@ -11,6 +11,15 @@ import arrowDown from "../../assets/images/arrowDown.svg";
 import arrowRight from "../../assets/images/arrowRight.svg";
 
 const Jobs = () => {
+  // clicking on down button, it will scroll the job inner section a bit
+  const scrollDown = () => {
+    const jobInner = document.querySelector(".job-inner");
+    jobInner.scrollBy({
+      top: 50,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
   const jobData = [
     {
       id: 1,
@@ -54,6 +63,48 @@ const Jobs = () => {
       desc: "bi-annual inspection",
       assignedTo: "Dennis Moore",
     },
+    {
+      id: 7,
+      name: "De Decker Digital",
+      avatar: job1,
+      desc: "New installation of Camera equipment",
+      assignedTo: "Harrison Fields",
+    },
+    {
+      id: 8,
+      name: "Vigor NV",
+      avatar: job2,
+      desc: "Repair of digital gate",
+      assignedTo: "Quinn Terrell",
+    },
+    {
+      id: 9,
+      name: "Proximus",
+      avatar: job3,
+      desc: "bi-annual inspection",
+      assignedTo: "Dennis Moore",
+    },
+    {
+      id: 10,
+      name: "High Classify",
+      avatar: job1,
+      desc: "New installation of Camera equipment",
+      assignedTo: "Harrison Fields",
+    },
+    {
+      id: 11,
+      name: "Evergreene BV",
+      avatar: job2,
+      desc: "Repair of digital gate",
+      assignedTo: "Quinn Terrell",
+    },
+    {
+      id: 12,
+      name: "Luminora",
+      avatar: job3,
+      desc: "bi-annual inspection",
+      assignedTo: "Dennis Moore",
+    },
   ];
   return (
     <div className="jobs">
@@ -67,10 +118,10 @@ const Jobs = () => {
           alt=""
         />
 
-        <div className="tech-inner">
+        <div className="job-inner">
           {jobData.map((job) => (
             <div
-              className="flex gap-10 align-center justify-between w-full mb-3"
+              className="flex gap-10 align-center justify-between w-full my-3"
               key={job.id}
             >
               <div className="flex justify-start align-center">
@@ -80,7 +131,7 @@ const Jobs = () => {
                     {job.name}
                   </p>
                   <p className="fs-14 text-gray">{job.desc}</p>
-                  <div className="flex w-full align-center justify-between">
+                  <div className="flex w-full align-center justify-start gap-3">
                     <p className="fs-14 text-gray">Assigned to:</p>
                     <p className="fs-14 text-blue">{job.assignedTo}</p>
                   </div>
@@ -93,7 +144,9 @@ const Jobs = () => {
       </div>
 
       <div className="arrow-holder">
-        <img src={arrowDown} alt="arrow" className="arrow0" />
+        <button className="down-btn" onClick={scrollDown}>
+          <img src={arrowDown} alt="arrow" className="arrow0" />
+        </button>
       </div>
     </div>
   );

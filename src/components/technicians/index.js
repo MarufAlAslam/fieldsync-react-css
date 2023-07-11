@@ -11,6 +11,16 @@ import tech4 from "../../assets/images/tech4.svg";
 import arrowDown from "../../assets/images/arrowDown.svg";
 
 const Technicians = () => {
+  // clicking on down button, it will scroll the job inner section a bit
+  const scrollDown = () => {
+    const jobInner = document.querySelector(".tech-inner");
+    jobInner.scrollBy({
+      top: 50,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   const techData = [
     {
       id: 1,
@@ -47,6 +57,55 @@ const Technicians = () => {
       time: "3:15:36",
       info: "At client",
     },
+    {
+      id: 6,
+      name: "Quinn Terrell",
+      avatar: tech2,
+      time: "0:36:01",
+      info: "On Route",
+    },
+    {
+      id: 7,
+      name: "Harrison Fields",
+      avatar: tech3,
+      time: "5:30:53",
+      info: "Break",
+    },
+    {
+      id: 8,
+      name: "Rowan Young",
+      avatar: tech4,
+      time: "3:15:36",
+      info: "On Route",
+    },
+    {
+      id: 9,
+      name: "Dennis Moore",
+      avatar: tech1,
+      time: "3:15:36",
+      info: "At client",
+    },
+    {
+      id: 10,
+      name: "Quinn Terrell",
+      avatar: tech2,
+      time: "0:36:01",
+      info: "On Route",
+    },
+    {
+      id: 11,
+      name: "Harrison Fields",
+      avatar: tech3,
+      time: "5:30:53",
+      info: "Break",
+    },
+    {
+      id: 12,
+      name: "Rowan Young",
+      avatar: tech4,
+      time: "3:15:36",
+      info: "On Route",
+    },
   ];
   return (
     <div className="tech">
@@ -63,7 +122,7 @@ const Technicians = () => {
         <div className="tech-inner">
           {techData.map((tech) => (
             <div
-              className="flex gap-10 align-center justify-between w-full mb-3"
+              className="flex gap-10 align-center justify-between w-full my-3"
               key={tech.id}
             >
               <div className="flex justify-start align-center">
@@ -84,7 +143,9 @@ const Technicians = () => {
       </div>
 
       <div className="arrow-holder">
-        <img src={arrowDown} alt="arrow" className="arrow0" />
+        <button className="down-btn" onClick={scrollDown}>
+          <img src={arrowDown} alt="arrow" className="arrow0" />
+        </button>
       </div>
     </div>
   );
