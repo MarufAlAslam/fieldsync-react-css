@@ -82,7 +82,7 @@ img {
   min-width: 250px;
   background-color: white;
   height: 100vh;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 .sidebar {
   width: 100%;
@@ -119,6 +119,8 @@ img {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
+  position: relative;
+  top: -20px;
 }
 
 .menu a {
@@ -143,15 +145,15 @@ img {
 
 .progress {
   padding-bottom: 35px;
-  margin-top: 200px;
+  margin-top: 50px;
   padding-left: 35px;
   padding-right: 35px;
 }
 
 .progress-img {
   position: relative;
-  top: -100px;
-  margin-bottom: -100px;
+  top: -60px;
+  margin-bottom: -60px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -298,7 +300,7 @@ img {
   padding: 15px;
   padding-top: 45px;
   height: 100vh;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .avatar {
@@ -339,12 +341,12 @@ img {
 }
 
 .tech-inner {
-  height: 250px;
+  height: 20vh;
   overflow-y: scroll;
 }
 
 .job-inner {
-  height: 43vh;
+  height: 32vh;
   overflow-y: scroll;
 }
 
@@ -467,6 +469,7 @@ img {
     z-index: 100;
     transition: 0.5s;
     transform: translateX(-100%);
+    overflow-y: scroll;
     /* display: none; */
   }
 
@@ -508,6 +511,7 @@ img {
     z-index: 100;
     transition: 0.5s;
     transform: translateX(100%);
+    overflow-y: scroll;
   }
   .toolBarbtn {
     display: block;
